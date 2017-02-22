@@ -1,0 +1,52 @@
+.trustmarks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 86px 0 94px;
+
+
+    .trustmarks-rbp {
+        display: block;
+        width: 94px;
+        height: 46px;
+        margin-left: 23px;
+        background: url('../images/spriteTrustmarks.png') 0 0 no-repeat;
+    }
+
+    .trustmarks-moto {
+        display: block;
+        width: 93px;
+        height: 39px;
+        background: url('../images/spriteTrustmarks.png') -145px 0 no-repeat;
+    }
+
+    .trustmarks-2crave {
+        display: block;
+        width: 152px;
+        height: 39px;
+        background: url('../images/spriteTrustmarks.png') -280px 0 no-repeat;
+    }
+
+    .trustmarks-atx {
+        display: block;
+        width: 101px;
+        height: 41px;
+        background: url('../images/spriteTrustmarks.png') -470px 0 no-repeat;
+    }
+
+    .trustmarks-cruiser {
+        display: block;
+        width: 115px;
+        height: 35px;
+        background: url('../images/spriteTrustmarks.png') -607px 0 no-repeat;
+    }
+
+    .trustmarks-gear {
+        width: 82px;
+        height: 60px;
+        margin-right: 40px;
+        background: url('../images/spriteTrustmarks.png') -768px 0 no-repeat;
+    }
+}

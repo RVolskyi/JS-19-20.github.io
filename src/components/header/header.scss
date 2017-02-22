@@ -1,0 +1,135 @@
+.header {
+    position: relative;
+    width: 1160px;
+    margin: 36px auto 0;
+
+    .logo {
+        display: block;
+        width: 205px;
+        margin-left: 4px;
+    }
+
+    .social-icons {
+        position: absolute;
+        top: 12px;
+        right: 3px;
+        width: 165px;
+        height: 16px;
+
+        .facebook {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background: url('../images/spriteSocialIcons.png') 0 0 no-repeat;
+
+            &:hover {
+                background-position: 0 -19px;
+            }
+        }
+
+        .twitter {
+            display: inline-block;
+            width: 16px;
+            height: 13px;
+            margin-left: 23px;
+            background: url('../images/spriteSocialIcons.png') -10px 0 no-repeat;
+
+            &:hover {
+                background-position: -10px -19px;
+            }
+        }
+
+        .rss {
+            display: inline-block;
+            width: 16px;
+            height: 15px;
+            margin-left: 17px;
+            background: url('../images/spriteSocialIcons.png') -28px 0 no-repeat;
+
+            &:hover {
+                background-position: -28px -19px;
+            }
+        }
+
+        .linkedin {
+            display: inline-block;
+            width: 16px;
+            height: 15px;
+            margin-left: 18px;
+            background: url('../images/spriteSocialIcons.png') -45px 0 no-repeat;
+
+            &:hover {
+                background-position: -45px -19px;
+            }
+        }
+
+        .skype {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-left: 17px;
+            background: url('../images/spriteSocialIcons.png') -62px 0 no-repeat;
+
+            &:hover {
+                background-position: -62px -19px;
+            }
+        }
+    }
+
+    .nav {
+        position: relative;
+        height: 54px;
+        margin-top: 37px;
+        background-color: $color1;
+        font-size: 0;
+
+        &::after {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 22px;
+            width: 14px;
+            height: 14px;
+            background: url('../images/spriteSocialIcons.png') -79px 0 no-repeat;
+            content: '';
+            z-index: 1;
+        }
+
+        a {
+            display: inline-block;
+            margin-left: -1px;
+            padding: 19px 40px;
+            transition: color $transitionDuration;
+            border-right: 1px solid $color3;
+            border-left: 1px solid $color3;
+            color: $color4;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $color5;
+            }
+
+            &.active {
+                border-right: 1px solid $color2;
+                border-left: 1px solid $color2;
+                background-color: $color2;
+                color: $color4;
+            }
+        }
+
+        .search {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 240px;
+            height: 40px;
+            padding-left: 14px;
+            border: 1px solid $color3;
+            outline: 0;
+            background-color: $color6;
+            color: $color7;
+        }
+    }
+}

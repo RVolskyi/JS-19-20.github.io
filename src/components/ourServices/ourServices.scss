@@ -1,0 +1,92 @@
+.ourServises {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 85px;
+    background-color: $color1;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1160px;
+        margin: 0 auto;
+        padding-bottom: 65px;
+
+        h2 {
+            width: 100%;
+            margin: 45px 0 55px;
+            color: $color4;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 24px;
+        }
+
+        figure {
+            &:hover {
+                a {
+                    &::before {
+                        opacity: .9;
+                    }
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+
+                figcaption {
+                    a {
+                        color: $color5;
+                    }
+                }
+            }
+
+            & > a {
+                display: block;
+                position: relative;
+                width: 260px;
+                height: 260px;
+
+                &::before {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 260px;
+                    height: 260px;
+                    transition: opacity $transitionDuration;
+                    background-color: $color2;
+                    content: '';
+                    opacity: 0;
+                }
+
+                &::after {
+                    display: block;
+                    position: absolute;
+                    top: 113px;
+                    left: 113px;
+                    width: 35px;
+                    height: 35px;
+                    transition: opacity $transitionDuration;
+                    background: url('../images/spriteOurServices.png') -1044px 0 no-repeat;
+                    content: '';
+                    opacity: 0;
+                }
+            }
+
+            figcaption {
+                margin-top: 30px;
+                text-align: center;
+
+                & > a {
+                    transition: color $transitionDuration;
+                    color: $color4;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

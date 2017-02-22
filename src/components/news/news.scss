@@ -1,0 +1,199 @@
+section.news {
+    width: 100%;
+    background-color: $color11;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 1160px;
+        margin: 0 auto;
+        padding: 55px 0;
+
+        .latestNews {
+            width: 562px;
+
+            h3 {
+                color: $color1;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .post {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                position: relative;
+                margin: 30px 0;
+
+                &::before {
+                    display: block;
+                    position: absolute;
+                    top: 12px;
+                    left: -15px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $color2;
+                    color: $color4;
+                    font-size: 18px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                &::after {
+                    display: block;
+                    position: absolute;
+                    top: 52px;
+                    left: -15px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $color5;
+                    color: $color1;
+                    font-size: 18px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                &.advancedMachinery {
+                    &::before {
+                        content: 'Jan';
+                    }
+
+                    &::after {
+                        content: '23';
+                    }
+                }
+
+                &.powerfulTechniques {
+                    &::before {
+                        content: 'Jan';
+                    }
+
+                    &::after {
+                        content: '21';
+                    }
+                }
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                div {
+                    margin-left: 35px;
+
+                    h4 {
+                        a {
+                            transition: color $transitionDuration;
+                            color: $color1;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: $color2;
+                            }
+                        }
+                    }
+
+                    .post-author {
+                        display: block;
+                        margin-top: 7px;
+                        color: $color16;
+                        font-size: 13px;
+
+                        & a {
+                            color: $color2;
+                            font-size: 13px;
+                            text-decoration: none;
+                        }
+                    }
+
+                    p {
+                        margin-top: 25px;
+                        color: $color10;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        .bannersPlace {
+            width: 562px;
+
+            h3 {
+                color: $color1;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            #accordion {
+                margin-top: 25px;
+                padding-left: 39px;
+
+                div {
+                    h4 {
+                        position: relative;
+                        height: 39px;
+                        margin-top: 5px;
+                        padding-left: 13px;
+                        border: 1px solid $color13;
+                        background-color: $color4;
+                        color: $color1;
+                        font-size: 13px;
+                        line-height: 39px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+
+                        &::before {
+                            display: block;
+                            position: absolute;
+                            top: -1px;
+                            left: -40px;
+                            width: 39px;
+                            height: 39px;
+                            border: 1px solid $color13;
+                            background: $color4 url('../images/spriteAccordion.png') -40px 0 no-repeat;
+                            content: '';
+                            cursor: pointer;
+                        }
+                    }
+
+                    p {
+                        display: none;
+                        margin-top: 25px;
+                        padding-bottom: 40px;
+                        color: $color10;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+
+                    &.active {
+                        h4 {
+                            border-top: 1px solid transparent;
+                            border-right: 1px solid transparent;
+                            border-bottom: 1px solid transparent;
+                            border-left: 1px solid $color12;
+                            background-color: $color5;
+
+                            &::before {
+                                width: 39px;
+                                height: 39px;
+                                border-top: 1px solid transparent;
+                                border-right: 1px solid $color12;
+                                border-bottom: 1px solid transparent;
+                                border-left: 1px solid transparent;
+                                background-color: $color5;
+                                background-position: 0 0;
+                            }
+                        }
+
+                        p {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

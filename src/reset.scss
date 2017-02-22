@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+div,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+header,
+i,
+img,
+input,
+nav,
+p {
+    margin: 0;
+    padding: 0;
+}

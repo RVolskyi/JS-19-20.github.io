@@ -1,0 +1,108 @@
+.benefits {
+    display: flex;
+    width: 1160px;
+    margin: 72px auto 0;
+
+    div {
+        position: relative;
+        padding-left: 122px;
+
+        &.power {
+            &::before {
+                content: '01';
+            }
+
+            h3 {
+                &::before {
+                    background: url('../images/spriteBenefitsIcons.png') 0 0 no-repeat;
+                }
+            }
+        }
+
+        &.tech {
+            &::before {
+                content: '02';
+            }
+
+            h3 {
+                &::before {
+                    background: url('../images/spriteBenefitsIcons.png') -34px 0 no-repeat;
+                }
+            }
+        }
+
+        &.support {
+            &::before {
+                content: '03';
+            }
+
+            h3 {
+                &::before {
+                    background: url('../images/spriteBenefitsIcons.png') -68px 0 no-repeat;
+                }
+            }
+        }
+
+        &::before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 61px;
+            height: 68px;
+            color: $color9;
+            font-size: 90px;
+        }
+
+        h3 {
+            color: $color8;
+            font-size: 20px;
+            font-weight: bold;
+
+            &::before {
+                display: block;
+                width: 32px;
+                height: 32px;
+                margin-bottom: 19px;
+                content: '';
+            }
+        }
+
+        p {
+            margin-top: 30px;
+            color: $color10;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        a {
+            display: inline-block;
+            position: relative;
+            margin-top: 15px;
+            transition: color $transitionDuration;
+            color: $color8;
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: none;
+
+            &::after {
+                display: block;
+                position: absolute;
+                top: 3px;
+                right: -20px;
+                width: 10px;
+                height: 9px;
+                background: url('../images/spriteBenefitsIcons.png') -101px -10px no-repeat;
+                content: '';
+            }
+
+            &:hover {
+                color: $color2;
+
+                &::after {
+                    background-position: -101px 0;
+                }
+            }
+        }
+    }
+}

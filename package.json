@@ -1,0 +1,26 @@
+{
+  "name": "js-hw-19-20",
+  "version": "1.0.0",
+  "description": "homework 19-20",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlinaKuzmenko/JS-HW-19-20.git"
+  },
+  "author": "Alina Kuzmenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlinaKuzmenko/JS-HW-19-20/issues"
+  },
+  "homepage": "https://github.com/AlinaKuzmenko/JS-HW-19-20#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-server-livereload": "^1.8.1"
+  }
+}
